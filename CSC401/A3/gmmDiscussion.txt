@@ -1,0 +1,78 @@
+
+From data record below, we can see that only decrease MaxItr will make the Log Likelihood much smaller.
+The finally accuracy, in another case might have no progression.
+When M decreased from 8 to 1, the Log Likelihood are becoming larger
+
+When only limited(10) speaker are used, the final accuracy is 31.25% while M=1 and MaxItr=1.
+
+To improve the classification accuracy of the Gaussian mixtures, without adding more training data,
+okay size of M and larger iteration number will do.
+
+When would your classifier decide that a given test utterance comes from none of the trained speaker models, and how would your classifier come to this decision?
+You can create a threshold for calculating log likelihood.
+
+A New SVM Approach or Linear Regression can be the alternative methods for doing speaker identification that don’t use Gaussian mixtures.
+
+
+===================================
+     D A T A   R E C O R D
+===================================
+... ...
+S-4D
+S-10B -252579.479561
+S-7C -252734.142113
+S-4D -255766.635804
+S-17A -256245.788664
+S-26B -257350.505128
+final accuracy 0.3125
+M=1 and MaxItr=1
+----------------------
+... ...
+S-4D
+S-4D -481860.248013
+S-21A -494369.510525
+S-27C -496166.135882
+S-29A -497468.712514
+S-17A -498229.678723
+final accuracy 0.96875
+- - - - - - - - - - -
+S-4D
+S-4D -484686.030725
+S-21A -494393.795695
+S-9A -495601.229418
+S-29A -498226.962712
+S-27C -499238.923989
+final accuracy 1.0
+- - - - - - - - - - -
+M=8 and MaxItr=20
+----------------------
+... ...
+S-4D
+S-10B -209698.533645
+S-7C -210938.84258
+S-4D -213154.937085
+S-17A -213915.694795
+S-21A -215025.673764
+final accuracy 0.28125
+M=1 and MaxItr=20
+----------------------
+... ...
+S-4D
+S-4D -486816.486455
+S-21A -495760.186549
+S-9A -500191.338441
+S-5A -500374.276917
+S-29A -503533.202133
+final accuracy 0.96875
+M=8 and MaxItr=1
+----------------------
+
+
+
+Experiment with the settings of M and maxIter (or ε if you wish). For example, what happens to classification accuracy as the number of components decreases? What about when the number of possible speakers, S, decreases? You will be marked on the detail with which you empirically answer these questions and whether you can devise one or more additional valid experiments of this type.
+ 3
+Additionally, your report should include short hypothetical answers to the following questions:
+• How might you improve the classification accuracy of the Gaussian mixtures, without adding more training data?
+• When would your classifier decide that a given test utterance comes from none of the trained speaker models, and how would your classifier come to this decision?
+• Can you think of some alternative methods for doing speaker identification that don’t use Gaussian mixtures?
+Put your experimental analysis and answers to these questions in the file gmmDiscussion.txt.
