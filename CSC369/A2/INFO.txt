@@ -1,0 +1,18 @@
+Quan Zhou, Yian Wu
+zhouqua7 , wuyian
+revision 10
+
+Discussion
+
+We think starvation can happen while arriving in the lane or corssing the intersection.
+
+Not every car car enter the lane because the size of the buffer is limited. 
+Therefore, no car can into the buffer if it is already full.  
+In that case, producer_cv is called to wait in car_arrive.
+Until any space is becoming available again, the producer_cv will be signaled to allow cars entering the lane.
+Starvation can happen if producer_cv is called to wait forever and never be signaled.
+
+If there is no car in the lane waiting to corss the intersection, consumer_cv will be called to wait.
+Until the buffer is not empty again and there is at least one car in the lane waiting to cross, the consumer_sv will be signaled again. 
+Starvation can happen when there is no car in the lane AND there is no car is waiting to be added to the buffer.
+In this case, consumer_cv will be waited forever can corssing step will never be reached.
