@@ -1,0 +1,2 @@
+0.39625,0.43675,0.46225,0.4645,0.46925
+The accuracy increased as the number of training samples increases. This is an expected trend. Having more training obviously will make a better performance.
