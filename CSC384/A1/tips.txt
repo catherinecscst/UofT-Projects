@@ -1,0 +1,16 @@
+1.Read the documentation of each functions carefully including the class snowman and search file. 
+  Understand the properties of each function and attributes so that we can use in our coding. That could improve the structure as well as consistency of the conding style.
+
+2.If a snowball is in a corner where it is not the destination, then there is a deadlock.
+  If two adjacent sides of a snowball is a wall or a obstacle, then there is a deadlock.
+  Carefully observe as much as deadlock situation in order to help on limiting the search space.
+
+3.The snowballs can be stakced temporarily while moving and push off later on. Bigger one at the bottom and smaller one on the top.
+  However a bigger snowball can not pass through a smaller snowball. Need to consider this situation while coding heur_alternate.
+
+4.We need to understand that searching and locating snowball priority is depending on the size od the snowball. 
+  Normally, find the bigger one and and place it first. Unless the case that move the smaller ones some steps can speed up the process or give a better solution.
+
+5.Try not not repeat same computaion steps over and over to save time. Divide up cases wisely.
+
+ 
