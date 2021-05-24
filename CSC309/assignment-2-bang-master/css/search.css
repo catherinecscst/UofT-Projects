@@ -1,0 +1,126 @@
+#searchPage{
+  	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url("../img/search/earth.png");
+	min-height: 100%;
+	overflow: hidden;
+}
+
+#searchBody{
+	position: absolute;
+	left:20%;
+	width: 60%;
+	top: 66%;
+	height: 8%;
+}
+
+#searchPage h1{
+	position: relative;
+	color: #e0ffff;
+	text-shadow: 0 0 5px rgba(255,255,255,1), 0 0 20px #1d7bca, 0 0 30px #1d7bca, 0 0 40px grey, 0 0 50px #1d7bca, 0 0 60px rgba(255,255,255,1);	
+	text-align: center;
+	font-size: 10vh;
+	margin-top: 29.5%;
+	transform: translateY(-50%);
+	z-index: 0;
+	padding-bottom: 8%;
+}
+
+#searchTextField{
+	position: absolute;
+	width: 77%;
+	z-index: 0;
+	text-align: center;
+	font-weight: bold;
+	height:97%;
+	font-size: 4vh;
+    border:0px solid #dbdbdb;
+}
+
+#searchButtonBg{
+	opacity: 0.98;
+	position: absolute;
+	left: 77%;
+	z-index: 1;
+	width: 23%;
+    height:101%;
+    background-color:#8fcbfc;
+}
+
+#searchButtonBg:after{
+	width: 85%;
+	right:100%;
+	top:50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	border-color: rgba(32,124,202,0);
+	border-right-color: #8fcbfc;
+	border-width: 10px;
+	margin-top: -10px;
+}
+
+#searchButton{
+	height: 100%;
+	position:absolute;
+	text-align: center;
+	z-index: 0;
+	width: 100%;
+	font-size: 4vh;  
+    border:2px solid #8fcbfc;
+    background-color:#8fcbfc;
+    color:#fafafa;
+}
+
+#searchButton:hover  {
+    color:black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+	#searchButton, #searchTextField{
+		font-size: 2vw;
+	}
+}
+
+@media screen and (max-width: 501px){
+	#searchPage h1{
+		font-size: 8vw;
+		margin-top: 45%;
+	}
+}
+
+@media screen and (max-height: 701px){
+	#searchPage h1{
+		font-size: 8vh;
+		margin-top: 20%;
+	}
+
+	#searchBody{
+		top: 55%;
+	}
+}
+
+@media screen and (max-height: 300px){
+	#searchPage h1{
+		font-size: 8vh;
+		margin-top: 15%;
+	}
+
+	#searchBody{
+		top: 45%;
+	}
+}
+
+@media screen and (max-width: 200px){
+	#searchPage h1{
+		font-size: 8vw;
+		margin-top: 60%;
+	}
+}
+
