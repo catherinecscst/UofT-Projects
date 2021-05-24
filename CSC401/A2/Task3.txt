@@ -1,0 +1,16 @@
+
+=====================================================
+No smoothing, English : 14.196391729928138
+No smoothing, French : 13.731164981966856
+-----------------------------------------------------
+Smoothing with delta 1, English : 141.67827333732407
+Smoothing with delta 1, French : 191.73288262026892
+-----------------------------------------------------
+Smoothing with delta 0.5, English : 105.97679004246146
+Smoothing with delta 0.5, French : 138.09354746907084
+-----------------------------------------------------
+Smoothing with delta 0.75, English : 124.96631263020285
+Smoothing with delta 0.75, French : 166.4936933654898
+=====================================================
+
+Smoothing with delta 1 has the best results.
