@@ -1,0 +1,54 @@
+// Hint: Crib from your model_view_projection.vs
+// Layout:
+//                                         Indicate that we're dealing with
+//                                         triangles in CCW order and using a
+//                                         sane spacing.
+layout(triangles, equal_spacing, ccw) in;
+// Uniforms
+uniform mat4 view;
+uniform mat4 proj;
+uniform float animation_seconds;
+uniform bool is_moon;
+// Inputs:
+//                    array of 3 3D patch corner positions
+in vec4 pos_es_in[];
+// Outputs:
+//                   projected, view, and model transformed 3D position
+out vec4 pos_fs_in;
+//                        view and model transformed 3D position
+out vec4 view_pos_fs_in;
+//                      view and model transformed 3D normal
+out vec3 normal_fs_in;
+//                      3D position _before_ applying model, view or projection
+//                      transformations (e.g., point on unit sphere)
+out vec3 sphere_fs_in;
+// expects: interpolat, model, 
+void main()
+{
+  /////////////////////////////////////////////////////////////////////////////
+  // Replace with your code 
+  // pos_fs_in = interpolate(gl_TessCoord, pos_es_in[0], pos_es_in[1], pos_es_in[2]);
+  // gl_Position = pos_fs_in;
+
+  vec4 interpolatedn = vec4(normalize(interpolate(gl_TessCoord, pos_es_in[0].xyz, pos_es_in[1].xyz, pos_es_in[2].xyz)), 1.0);
+  mat4 m = model(is_moon, animation_seconds);
+  if (is_moon){
+    float PI = 3.1415927;
+    float theta = (PI / 2) * animation_seconds;
+    vec4 translate = vec4(2 * sin(theta), 0, 2 * cos(theta),0);
+    pos_fs_in = proj * view * (m * uniform_scale(0.3) * interpolatedn + translate);
+    view_pos_fs_in = view * (m * uniform_scale(0.3) * interpolatedn + translate);
+  }
+  else{
+    pos_fs_in = proj * view * m * interpolatedn;
+    view_pos_fs_in = view * m * interpolatedn;
+  }
+
+  sphere_fs_in = interpolatedn.xyz;
+  normal_fs_in = (transpose(inverse(view)) * transpose(inverse(m)) * interpolatedn).xyz;
+  gl_Position = pos_fs_in;
+
+  /////////////////////////////////////////////////////////////////////////////
+}
+
+
