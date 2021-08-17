@@ -1,0 +1,62 @@
+% Quan Zhou, zhouqua7, 1002162492
+
+<'the student appeared to sleep'
+{ :'s_rule:the student appeared to sleep'
+    s(
+        mood: indicative(
+            tense: tense),
+        vsem: 'mgsat(v_sem)')
+    { :'np_rule:the student'
+        np(
+            nsem: n_sem)
+        { :'lexicon:the'
+            det
+        }
+        { :'lexicon:student'
+            n(
+                nsem: student)
+        }
+    }
+    { :'vp_rule//3:appeared to sleep'
+        vp(
+            mood: indicative(
+                tense: tense),
+            vsem: v_sem(
+                agent: nsem_none,
+                beneficiary: nsem_none,
+                experiencer: nsem_none,
+                passtype: type,
+                theme: nsem_none,
+                vform: past))
+        { :'lexicon:appeared'
+            v(
+                vsem: appear(
+                    agent: none,
+                    beneficiary: none,
+                    experiencer: none,
+                    passtype: none,
+                    theme: n_sem,
+                    vform: past))
+        }
+        { :'toinf_rule:to sleep'
+            inf_clause(
+                mood: infinitive,
+                vsem: 'mgsat(v_sem)')
+            { :'lexicon:to'
+                toinf
+            }
+            { :'lexicon:sleep'
+                v(
+                    vsem: sleep(
+                        agent: none,
+                        beneficiary: none,
+                        experiencer: n_sem,
+                        passtype: none,
+                        theme: none,
+                        vform: present))
+            }
+        }
+    }
+}
+>
+

@@ -1,0 +1,27 @@
+% Quan Zhou, zhouqua7, 1002162492
+
+ii. The student appeared to sleep.
+
+appear:
+    Theme -> to sleep
+sleep:
+    Experiencer -> the student
+
+iii. The student promised the teacher to sleep.
+
+promised:
+    Agent -> the student
+    Theme -> to sleep.
+    Beneficiary -> the teacher
+
+sleep:
+    Experiencer -> the student
+
+iv. The student expected the teacher to sleep.
+
+expected:
+    Agent -> the student
+    Theme -> the teacher to sleep.
+
+sleep: 
+    Experiencer -> the teacher

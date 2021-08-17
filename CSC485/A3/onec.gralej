@@ -1,0 +1,58 @@
+% Quan Zhou, zhouqua7, 1002162492
+
+<'fido feeds the dog with biscuits'
+{ :'s_rule:fido feeds the dog with biscuits'
+    s
+    { :'np_rule:fido'
+        np(
+            noun: 'mgsat(n)')
+        { :'lexicon:fido'
+            n(
+                dir_indir: direct,
+                n_prp: prp,
+                sing_pl: sing)
+        }
+    }
+    { :'vp_rule:feeds the dog with biscuits'
+        vp(
+            verb: 'mgsat(v)')
+        { :'lexicon:feeds'
+            v(
+                subject: n(
+                    dir_indir: dir_indir,
+                    n_prp: n_prp,
+                    sing_pl: sing))
+        }
+        { :'np_det_pp_rule:the dog with biscuits'
+            np(
+                noun: 'mgsat(n)')
+            { :'lexicon:the'
+                det
+            }
+            { :'lexicon:dog'
+                n(
+                    dir_indir: indirect,
+                    n_prp: nprp,
+                    sing_pl: sing)
+            }
+            { :'pp_rule:with biscuits'
+                pp
+                { :'lexicon:with'
+                    p
+                }
+                { :'np_rule:biscuits'
+                    np(
+                        noun: 'mgsat(n)')
+                    { :'lexicon:biscuits'
+                        n(
+                            dir_indir: direct,
+                            n_prp: nprp,
+                            sing_pl: plural)
+                    }
+                }
+            }
+        }
+    }
+}
+>
+
