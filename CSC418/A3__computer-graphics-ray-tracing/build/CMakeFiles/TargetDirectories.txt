@@ -1,0 +1,4 @@
+/h/u3/c5/04/zhouqua7/csc418/A3/computer-graphics-ray-tracing/build/CMakeFiles/rebuild_cache.dir
+/h/u3/c5/04/zhouqua7/csc418/A3/computer-graphics-ray-tracing/build/CMakeFiles/edit_cache.dir
+/h/u3/c5/04/zhouqua7/csc418/A3/computer-graphics-ray-tracing/build/CMakeFiles/raytracing.dir
+/h/u3/c5/04/zhouqua7/csc418/A3/computer-graphics-ray-tracing/build/CMakeFiles/hw2.dir
