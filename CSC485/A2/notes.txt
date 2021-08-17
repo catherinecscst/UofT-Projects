@@ -1,0 +1,14 @@
+# Nouns:         NP, N, NPrp (proper noun => names, etc...), NPro (pronoun => his, mine, ours, it, etc...), 
+                 NDem (demonstrative pro-noun => that, this, these, those ...)
+# Verbs:         VP, V, Aux, Modal(=> must, shall, will, should, would, can, could, may, and might.)
+# Adjectives:    AdjP(is a phrase the head word of which is an adjective), Adj
+# Prepositions:  PP, P
+# Other:         Det (article or determiner), Dem (demonstrative determiner), Adv (ad- verb)
+
+# Personal pronouns: she/her, I/me, you, he/him, it, we/us, they/them.   Subject/Object
+# Relative pronouns: that, what, which, who, whom.
+# Demonstrative pronouns: that, this, these, those.
+# Indefinite pronouns: one, other, none, some, anybody, everybody, no one.
+# Reflexive pronouns: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.
+# Possessive pronouns: my, your, its, his, her, our, their, whose.
+# Interrogative pronouns: who, what, which, whose.

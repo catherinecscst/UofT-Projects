@@ -1,0 +1,64 @@
+# Quan Zhou, zhouqua7, 1002162492
+
+# ====== Noun =====
+N_mass -> 'fur' | 'cloth' | 'cheese' | 'autopoiesis' | 'menu' | 'help'
+N_consnt -> 'cat' |'rutabaga' | 'boat' | 'poodle' | 'man' | 'hovercraft' | 'cloth' | "egg"
+N_vowel -> 'eggplant' | 'autoclave' | 'elephant' 
+
+NPrp -> 'Nadia' | 'Ross' | 'Marseilles' | 'Google'   
+NPro_subject -> 'she' | 'I' | 'he' | 'it' | 'we' | 'they' | 'you' 
+NPro_object -> 'him' | 'her' | 'it' | 'us' | 'them' | 'you' 
+Npro_possessive -> 'my' | 'your' | 'its' | 'his' | 'her' | 'our'| 'their' | 'whose'
+
+# ======= Modifier ========
+Adj -> 'long' | 'soft' | 'handsome' | 'tall' 
+P -> 'with' | 'for' | 'to' | 'onto' | 'on' | 'of' | 'from' | 'before' | 'after'
+Adv -> 'immediately' | 'slowly' | 'really' | 'already' | 'always'
+P_that -> 'that'
+P_to -> 'to'
+
+Det -> 'the' | Npro_possessive   
+Det_mass -> 'the' | Npro_possessive
+Det_vowel -> 'the' | 'an' | Npro_possessive
+Det_consnt -> 'the' | 'a' | Npro_possessive
+Dem -> 'that' | 'this' | 'these' | 'those'
+V_ww -> 'was' | 'were'
+
+# ======= Intransitive Verbs ===========>  not taking a direct object 
+V_in -> 'arrive' | 'leave' | 'eat' | 'shoot' | 'jump' | 'believe' | 'win' | 'help' | 'demand' | 'aspire'
+V_in_p -> 'arrived' | 'left' | 'ate' | 'shot' | | 'jumped' | 'believed' | 'won' | 'helped' | 'demanded' | 'aspired'
+V_in_pp -> 'arrived' | 'left' | 'eaten' | 'shot' | 'jumped' | 'believed' | 'won' | 'helped' | 'demanded' | 'aspired'
+V_in_ing -> 'arriving' | 'leaving' | 'eating' | 'shooting' | 'jumping' | 'believing' | 'winning' | 'helping' | 'demanding' | 'aspiring'
+
+
+# ======= Monotransitive Verbs ===========> subject verb object
+V_mono -> 'eat' | 'leave' | 'shoot' | 'fondle' | 'bring' | 'tell' | 'jump' | 'believe' 
+V_mono -> 'win' | 'see' | 'want' | 'help' | 'remind' | 'reward' | 'demand' | 'find' | 'give' | 'have'
+V_mono_p -> 'ate' | 'left' | 'shot' | 'fondled' | 'brought' | 'told' | 'jumped' | 'believed'
+V_mono_p -> 'won' | 'saw' | 'wanted' | 'helped' | 'reminded' | 'rewarded' | 'demanded' | 'found' | 'gave' | 'had'
+V_mono_pp -> 'eaten' | 'left' | 'shot' | 'fondled' | 'brought' | 'told' | 'jumped' | 'believed'
+V_mono_pp -> 'won' | 'seen' | 'wanted' | 'helped' | 'reminded' | 'rewarded' | 'demanded' | 'found' | 'given'
+Vp_mono_that -> 'told' | 'believed' | 'saw' | 'reminded'
+Vp_mono_to -> 'left' | 'wanted' | 'demanded' | 'had'
+V_mono_to -> 'leave' | 'want' | 'demand' | 'have'
+
+# ======= Ditransitive Verbs ===========> direct verb indirect
+V_di -> 'bring' | 'tell' | 'remind' | 'demand' | 'give'
+V_di_p -> 'brought' | 'told' | 'reminded' | 'demanded' | 'gave'
+V_di_pp -> 'brought' | 'told' | 'reminded' | 'demanded' | 'given'
+Vp_di_that -> 'told' | 'reminded'
+Vp_di_to -> 'brought' | 'aspired' | 'told' | 'reminded' | 'demanded' | 'gave'
+V_di_to -> 'bring' | 'tell' | 'remind' | 'demand' | 'give'
+
+# ======= Aux ===========>
+AuxM -> 'will' | 'may' | 'can' | 'could' | 'should' | 'might' | 'must' | 'would' 
+AuxPf -> 'has' | 'have' | 'had' 
+AuxM_Pf -> 'have'
+AuxPgs -> 'are' | 'were' | 'is' | 'was' | 'am' 
+AuxM_Pgs -> 'be'
+AuxPf_Pgs -> 'been'
+AuxPs -> 'are' | 'were' | 'is' | 'was' | 'am' 
+AuxM_Ps -> 'be'
+AuxPf_Ps -> 'been'
+AuxPgs_Ps -> 'being'
+
