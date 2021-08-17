@@ -1,0 +1,1 @@
+/usr/bin/c++   -fPIC  -rdynamic CMakeFiles/rays.dir/rays.cpp.o  -o rays libcore.a /usr/lib/x86_64-linux-gnu/libGL.so glad/libglad.a glfw/src/libglfw3.a -lrt -lm -ldl -lX11 -lpthread 

@@ -1,0 +1,1 @@
+/usr/bin/c++   -fPIC  -rdynamic CMakeFiles/distances.dir/distances.cpp.o  -o distances libcore.a /usr/lib/x86_64-linux-gnu/libGL.so glad/libglad.a glfw/src/libglfw3.a -lrt -lm -ldl -lX11 -lpthread 
